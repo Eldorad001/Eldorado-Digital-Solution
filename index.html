@@ -1,206 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Eldorado Digital Solution | Shopify Experts</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
+
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Poppins',sans-serif;
-    scroll-behavior:smooth;
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
 }
 
 body{
-    background:#081120;
-    color:#fff;
+background:#050816;
+color:white;
+overflow-x:hidden;
 }
 
 header{
-    position:fixed;
-    top:0;
-    width:100%;
-    padding:20px 8%;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    background:rgba(0,0,0,0.3);
-    backdrop-filter:blur(20px);
-    z-index:1000;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(5,8,22,0.95);
+backdrop-filter:blur(20px);
+z-index:1000;
 }
 
 .logo{
-    color:#00ff99;
-    font-size:28px;
-    font-weight:700;
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.logo img{
+width:55px;
+}
+
+.logo span{
+font-size:24px;
+font-weight:700;
+color:#00ff99;
 }
 
 nav a{
-    color:white;
-    text-decoration:none;
-    margin-left:25px;
-    transition:0.3s;
+color:white;
+text-decoration:none;
+margin-left:25px;
+transition:0.3s;
 }
 
 nav a:hover{
-    color:#00ff99;
+color:#00ff99;
+}
+
+.cta{
+padding:12px 30px;
+background:#00ff99;
+color:#050816;
+border-radius:40px;
+text-decoration:none;
+font-weight:600;
 }
 
 .hero{
-    min-height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    padding:0 10%;
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:150px 10% 100px;
+background:linear-gradient(135deg,#050816,#081120,#0f172a);
+}
+
+.hero-content{
+max-width:900px;
 }
 
 .hero h1{
-    font-size:65px;
-    margin-bottom:20px;
+font-size:70px;
+line-height:1.2;
+margin-bottom:25px;
 }
 
 .hero span{
-    color:#00ff99;
+color:#00ff99;
 }
 
 .hero p{
-    max-width:700px;
-    margin:auto;
-    line-height:1.8;
-    color:#cbd5e1;
+font-size:20px;
+line-height:1.8;
+color:#cbd5e1;
+margin-bottom:40px;
 }
 
-.buttons{
-    margin-top:40px;
+.buttons a{
+display:inline-block;
+padding:18px 40px;
+margin:10px;
+border-radius:40px;
+text-decoration:none;
+font-weight:600;
+transition:0.3s;
 }
 
-.btn{
-    display:inline-block;
-    padding:15px 35px;
-    border-radius:50px;
-    background:#00ff99;
-    color:#081120;
-    text-decoration:none;
-    font-weight:600;
-    margin:10px;
-    transition:0.3s;
+.btn-primary{
+background:#00ff99;
+color:#050816;
 }
 
-.btn:hover{
-    transform:translateY(-5px);
+.btn-secondary{
+border:2px solid #00ff99;
+color:white;
 }
 
-section{
-    padding:100px 10%;
-}
-
-.title{
-    text-align:center;
-    color:#00ff99;
-    margin-bottom:50px;
-    font-size:40px;
-}
-
-.about{
-    max-width:900px;
-    margin:auto;
-    text-align:center;
-    color:#cbd5e1;
-    line-height:1.9;
-}
-
-.grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:25px;
-}
-
-.card{
-    background:rgba(255,255,255,0.05);
-    border:1px solid rgba(255,255,255,0.1);
-    backdrop-filter:blur(20px);
-    border-radius:20px;
-    padding:35px;
-    transition:0.4s;
-}
-
-.card:hover{
-    transform:translateY(-10px);
-}
-
-.card h3{
-    color:#00ff99;
-    margin-bottom:15px;
+.buttons a:hover{
+transform:translateY(-5px);
 }
 
 .stats{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-    gap:20px;
+padding:80px 8%;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
 }
 
-.stat{
-    background:#111827;
-    padding:40px;
-    border-radius:20px;
-    text-align:center;
+.stat-box{
+background:#0f172a;
+padding:40px;
+border-radius:20px;
+text-align:center;
+border:1px solid rgba(255,255,255,0.05);
 }
 
-.stat h2{
-    color:#00ff99;
-    font-size:45px;
+.stat-box h2{
+font-size:45px;
+color:#00ff99;
+margin-bottom:10px;
 }
 
-.contact{
-    text-align:center;
+.stat-box p{
+color:#cbd5e1;
 }
 
-.contact p{
-    margin:15px 0;
-    font-size:20px;
+.section-title{
+text-align:center;
+font-size:45px;
+margin-bottom:60px;
+color:#00ff99;
 }
 
-footer{
-    background:#050b16;
-    text-align:center;
-    padding:30px;
-    color:#94a3b8;
+.services{
+padding:100px 8%;
 }
 
-.whatsapp{
-    position:fixed;
-    right:20px;
-    bottom:20px;
-    width:65px;
-    height:65px;
-    background:#25D366;
-    color:white;
-    border-radius:50%;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-decoration:none;
-    font-size:30px;
+.service-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
 }
 
-@media(max-width:768px){
-
-    nav{
-        display:none;
-    }
-
-    .hero h1{
-        font-size:40px;
-    }
-
+.service-card{
+background:#0f172a;
+padding:35px;
+border-radius:20px;
+transition:0.3s;
+border:1px solid rgba(255,255,255,0.05);
 }
-</style>
+
+.service-card:hover{
+transform:translateY(-10px);
+border-color:#00ff99;
+}
+
+.service-card h3{
+margin-bottom:20px;
+color:#00ff99;
+}
+
+.service-card p{
+line-height:1.8;
+color:#cbd5e1;
+}
+    </style>
 
 </head>
 
@@ -209,149 +204,347 @@ footer{
 <header>
 
 <div class="logo">
-ELDORADO DIGITAL SOLUTION
+<img src="MD.png">
+<span>Eldorado Digital Solution</span>
 </div>
 
 <nav>
-<a href="#about">About</a>
+<a href="#home">Home</a>
 <a href="#services">Services</a>
-<a href="#results">Results</a>
+<a href="#portfolio">Portfolio</a>
 <a href="#contact">Contact</a>
 </nav>
 
+<a href="https://wa.me/447763957581" class="cta">
+Let's Talk
+</a>
+
 </header>
 
-<section class="hero">
+<section class="hero" id="home">
 
-<div>
+<div class="hero-content">
 
 <h1>
-Building <span>Shopify Stores</span><br>
-That Generate Sales
+Build a <span>High-Converting Shopify Store</span>
+That Grows Your Business
 </h1>
 
 <p>
-Eldorado Digital Solution helps brands launch, redesign, optimize, and scale Shopify stores through modern design, SEO, and conversion-focused strategies.
+We help brands design, optimize, and scale Shopify stores that generate more sales and improve customer experience.
 </p>
 
 <div class="buttons">
-<a href="#services" class="btn">Our Services</a>
-<a href="#contact" class="btn">Contact Us</a>
-</div>
 
-</div>
+<a href="https://wa.me/447763957581" class="btn-primary">
+Get Started
+</a>
 
-</section>
+<a href="https://www.fiverr.com/users/eldorado_team1" class="btn-secondary">
+Visit Fiverr
+</a>
 
-<section id="about">
-
-<h2 class="title">About Us</h2>
-
-<div class="about">
-Eldorado Digital Solution specializes in Shopify store design, store redesign, SEO optimization, conversion optimization, and digital marketing solutions. We help businesses create premium online stores that attract customers and increase sales.
-</div>
-
-</section>
-
-<section id="services">
-
-<h2 class="title">Our Services</h2>
-
-<div class="grid">
-
-<div class="card">
-<h3>Shopify Store Design</h3>
-<p>Professional Shopify stores built for conversions.</p>
-</div>
-
-<div class="card">
-<h3>Store Redesign</h3>
-<p>Transform outdated stores into premium brands.</p>
-</div>
-
-<div class="card">
-<h3>Shopify SEO</h3>
-<p>Improve rankings and organic traffic.</p>
-</div>
-
-<div class="card">
-<h3>Dropshipping Setup</h3>
-<p>Complete Shopify dropshipping setup.</p>
-</div>
-
-<div class="card">
-<h3>Conversion Optimization</h3>
-<p>Increase store sales and engagement.</p>
-</div>
-
-<div class="card">
-<h3>Email Marketing</h3>
-<p>Klaviyo and customer retention systems.</p>
 </div>
 
 </div>
 
 </section>
 
-<section id="results">
+<section class="stats">
 
-<h2 class="title">Why Choose Us</h2>
+<div class="stat-box">
+<h2>100+</h2>
+<p>Projects Completed</p>
+</div>
 
-<div class="stats">
-
-<div class="stat">
+<div class="stat-box">
 <h2>50+</h2>
-<p>Projects</p>
+<p>Happy Clients</p>
 </div>
 
-<div class="stat">
-<h2>100%</h2>
-<p>Responsive</p>
-</div>
-
-<div class="stat">
+<div class="stat-box">
 <h2>24/7</h2>
 <p>Support</p>
 </div>
 
-<div class="stat">
-<h2>SEO</h2>
-<p>Optimized</p>
+<div class="stat-box">
+<h2>Global</h2>
+<p>Services</p>
+</div>
+
+</section>
+
+<section class="services" id="services">
+
+<h2 class="section-title">
+Shopify Services
+</h2>
+
+<div class="service-grid">
+
+<div class="service-card">
+<h3>Shopify Store Design</h3>
+<p>Premium Shopify stores designed to convert visitors into customers.</p>
+</div>
+
+<div class="service-card">
+<h3>Store Redesign</h3>
+<p>Modern redesigns that improve appearance and user experience.</p>
+</div>
+
+<div class="service-card">
+<h3>Shopify SEO</h3>
+<p>Optimize your store to rank better and attract organic traffic.</p>
+</div>
+
+<div class="service-card">
+<h3>Dropshipping Setup</h3>
+<p>Complete Shopify dropshipping setup from start to finish.</p>
+</div>
+
+<div class="service-card">
+<h3>Speed Optimization</h3>
+<p>Improve loading speed and overall store performance.</p>
+</div>
+
+<div class="service-card">
+<h3>Conversion Optimization</h3>
+<p>Increase sales with strategic optimization techniques.</p>
+</div>
+
+</div>
+
+</section>
+<section id="portfolio" class="services">
+
+<h2 class="section-title">
+Portfolio
+</h2>
+
+<div class="service-grid">
+
+<div class="service-card">
+<h3>Luxury Fashion Store</h3>
+<p>
+Premium Shopify fashion store with modern design and conversion-focused layout.
+</p>
+</div>
+
+<div class="service-card">
+<h3>Perfume Store</h3>
+<p>
+Elegant fragrance store optimized for mobile shopping and high conversions.
+</p>
+</div>
+
+<div class="service-card">
+<h3>Beauty Brand Store</h3>
+<p>
+Custom Shopify design for beauty and cosmetic products.
+</p>
+</div>
+
+<div class="service-card">
+<h3>One Product Store</h3>
+<p>
+High-converting single-product Shopify sales funnel.
+</p>
+</div>
+
+<div class="service-card">
+<h3>Electronics Store</h3>
+<p>
+Modern product catalog with optimized navigation and checkout.
+</p>
+</div>
+
+<div class="service-card">
+<h3>Dropshipping Store</h3>
+<p>
+Complete Shopify dropshipping setup with winning products.
+</p>
 </div>
 
 </div>
 
 </section>
 
-<section id="contact">
+<section class="services">
 
-<h2 class="title">Contact Us</h2>
+<h2 class="section-title">
+Why Choose Us
+</h2>
 
-<div class="contact">
+<div class="service-grid">
 
-<p>📱 WhatsApp: +44 7763 957581</p>
+<div class="service-card">
+<h3>Expert Shopify Knowledge</h3>
+<p>
+Years of experience helping businesses launch and grow online.
+</p>
+</div>
 
-<p>📧 eldoradoagencyy@gmail.com</p>
+<div class="service-card">
+<h3>Conversion Focused</h3>
+<p>
+Every store is designed to maximize sales and customer trust.
+</p>
+</div>
 
-<p>🌍 Available Worldwide</p>
+<div class="service-card">
+<h3>Fast Delivery</h3>
+<p>
+Professional service delivered on time with continuous support.
+</p>
+</div>
 
 </div>
 
 </section>
 
-<footer>
+<section class="services">
 
-© 2026 Eldorado Digital Solution
+<h2 class="section-title">
+Client Testimonials
+</h2>
 
-<br><br>
+<div class="service-grid">
 
+<div class="service-card">
+<h3>★★★★★</h3>
+<p>
+"The Shopify redesign completely transformed our store. Highly recommended."
+</p>
+</div>
+
+<div class="service-card">
+<h3>★★★★★</h3>
+<p>
+"Professional communication and excellent attention to detail."
+</p>
+</div>
+
+<div class="service-card">
+<h3>★★★★★</h3>
+<p>
+"Our sales improved after the optimization work."
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="services">
+
+<h2 class="section-title">
+Work With Me On Fiverr
+</h2>
+
+<div class="service-card" style="text-align:center;max-width:700px;margin:auto;">
+
+<h3>Eldorado Team</h3>
+
+<p style="margin-bottom:30px;">
+Professional Shopify services available on Fiverr.
+</p>
+
+<a href="https://www.fiverr.com/users/eldorado_team1"
+style="
+display:inline-block;
+padding:18px 40px;
+background:#00ff99;
+color:#050816;
+text-decoration:none;
+border-radius:40px;
+font-weight:600;
+">
+Visit Fiverr Profile
+</a>
+
+</div>
+
+</section>
+
+<section id="contact" class="services">
+
+<h2 class="section-title">
+Contact Us
+</h2>
+
+<div class="service-card" style="text-align:center;max-width:700px;margin:auto;">
+
+<h3>Eldorado Digital Solution</h3>
+
+<p style="margin:20px 0;">
+WhatsApp: +44 7763 957581
+</p>
+
+<p style="margin:20px 0;">
+Email: eldoradoagencyy@gmail.com
+</p>
+
+<p style="margin:20px 0;">
+Available worldwide for Shopify projects.
+</p>
+
+<a href="https://wa.me/447763957581"
+style="
+display:inline-block;
+padding:18px 40px;
+background:#00ff99;
+color:#050816;
+text-decoration:none;
+border-radius:40px;
+font-weight:600;
+">
+Chat on WhatsApp
+</a>
+
+</div>
+
+</section>
+
+<footer style="
+padding:40px;
+text-align:center;
+background:#081120;
+color:#cbd5e1;
+">
+
+<img src="MD.png" width="80">
+
+<p style="margin-top:20px;">
+Eldorado Digital Solution
+</p>
+
+<p style="margin-top:10px;">
 Design • Optimize • Scale
+</p>
+
+<p style="margin-top:20px;">
+© 2026 All Rights Reserved.
+</p>
 
 </footer>
 
-<a class="whatsapp"
-href="https://wa.me/447763957581"
-target="_blank">
+<a href="https://wa.me/447763957581"
+style="
+position:fixed;
+right:20px;
+bottom:20px;
+width:65px;
+height:65px;
+background:#25D366;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:30px;
+text-decoration:none;
+color:white;
+box-shadow:0 0 20px rgba(37,211,102,0.5);
+">
 💬
 </a>
 
